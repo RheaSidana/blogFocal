@@ -1,0 +1,14 @@
+Bower components:
+1. npm install -g bower
+    bower install angular
+2.bower install bootstrap
+    bower install stamplay-js-sdk
+3.bower install angular-ui-router
+4.bower install ngToast
+5.bower install textAngular
+6.npm install -g stamplay-cli
+        stamplay init
+        stamplay deploy
+
+
+:a5d8ej.stamplayapp.com
