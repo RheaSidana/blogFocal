@@ -1,0 +1,70 @@
+<ul class="nav navbar-nav navbar-right" ng-if="loggedIn">
+    <li class="dropdown">
+      <a class="dropdown-toggle"  data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">
+        Blogs
+        <span class="caret">
+         </span>
+      </a>
+      <ul>
+        <li>
+          <a ui-sref="Create">
+              Write A Blog
+          </a>
+        </li>
+        <li>
+          <a ui-sref="MyBlogs">
+             View A Blog
+          </a>
+        </li>
+        <li>
+          <a ui-sref="SurfBlogs">
+          Surf Blogs
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown"  ng-if="loggedIn">
+      <a class="dropdown-toggle"  data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">
+        {{displayName}}
+        <span class="caret">
+        </span>
+      </a>
+      <ul>
+        <li>
+          <a ui-sref="ViewProfile">
+            View My Profile
+          </a>
+        </li>
+        <li>
+          <a ui-sref="EditProfile">
+             Edit My Profile
+          </a>
+        </li>
+        <li>
+        ` <a ui-sref="Saved">
+            View Saved Blogs
+          </a>
+        </li>
+        <li>
+          <a ui-sref="reportProblem">
+            Report A Problem
+          </a>
+        </li>
+        <li>
+          <a ui-sref="AskQuestion">
+            Ask Question
+          </a>
+        </li>
+        <li>
+          <a ui-sref="FreqQ">
+            Frequently asked Questions
+          </a>
+        </li>
+        <li>
+          <a ui-sref="home" ng-click="logout">
+            LogOut
+          </a>
+        </li>
+      </ul>    
+    </li>
+</ul>

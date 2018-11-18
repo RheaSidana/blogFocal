@@ -1,0 +1,36 @@
+<h1>Saved Posts</h1>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel-group">
+            <div class="col-md-3 col-md-4 col-xs-12" ng-repeat="blogs in SavedBlogs" style="height:214px">
+                <div class="panel panel-default panel-primary">
+                    <div class="panel-heading">
+                        {{blog.title}}
+                    </div>
+                    <div class="panel-body" ng-bind-html="blog.content|htmlToPlainText|limitTo:100">
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <small>
+                                    {{blog.action.comments.length}}
+                                </small>
+                            </div>
+                            <div claas="col-md-4 col-sm-4">
+                                <a class="btn btn-primary pull-right" href="#/view/{{blog._id}}">
+                                        Read More
+                                </a>
+                            </div>
+                            <div claas="col-md-4 col-sm-4">
+                                <a class="btn btn-primary pull-right" href="#/view/{{blog._id}}">
+                                    Read More
+                                </a>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

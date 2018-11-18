@@ -1,0 +1,60 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-md-8 col-sm-8">
+                <div class="row">
+                    <h1>{{blog.title}}</h1>
+                </div>
+                <div>
+                    <h4>{{author}}</h4>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div clas="row">
+                    <button type="button" class="btn btn-success glyphicon glyphicon-thumbs-up" ng-click="upVote()">
+                        {{upVoteCount}}
+                    </button>
+                    <button type="button" class="btn btn-danger glyphicon glyphicon-thumbs-down" ng-click="downVote()">
+                        {{downVoteCount}}
+                    </button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-primary glyphicon glyphicon-star-empty" ng-click="SavePost()">
+                        {{savedCount}}Save
+                    </button>
+                    <span class="label label-info glyphicon glyphicon-eye-open" >
+                        {{ViewsCount}} Views
+                    </span>
+                    <button type="button" class="btn btn-info glyphicon glyphicon-flag" ng-click="flagsAdd()">
+                        {{flagCount}} Flag 
+                    </button>
+                </div>  
+            </div>
+        </div>
+        <hr/>
+        <p ng-bind-html="blog.content"></p>
+        <hr/>
+    </div>
+    <div class="col-md-5 col-sm-12">
+        <h2>Comments</h2>
+        <hr/>
+        <div class="row" ng-repeat= "comments in blog.actions.comments">
+            <div class="col-md-12 col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <b>     {{comment.displayName}}</b> :{{comment.text}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        <div class="form-group">
+            <input type="textarea" style="width:100%; height:50px;" ng-model="comment"/>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-12 pull-right">
+        <div class="btn btn-primary glyphicon glyphicon-comment" >
+            Comment
+        </div>
+    </div>
+</div>

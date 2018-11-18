@@ -1,0 +1,17 @@
+<h1><b>Create New Post</b></h1>
+<div class="col-md-8">
+    <div class="form-control">
+        <input type="text" ng-model="newPost.title" class="form-control input-lg" placeholder="Post titlehere "/>
+    </div>
+    <div class="form-control">
+        <text-angular ng-model="newPost.content">
+        </text-angular>
+    </div>
+    <button class="btn btn-primary pull-right" ng-click="Create()">
+        Done
+    </button>
+</div>
+<div class="col-md-4">
+    <div ng-bind-html="newPost.content">
+    </div>
+</div>
