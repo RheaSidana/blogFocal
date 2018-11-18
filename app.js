@@ -22,7 +22,7 @@ app.config(function($stateProvider,$urlRouterProvider){
     $stateProvider
     .state('home',{
         url:'/',
-        templateurl:'templates/home.html',
+        templateurl:'templates/index.html',
         controller:'HomeCtrl'
     })
     .state('MyBlogs',{
