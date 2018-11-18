@@ -116,8 +116,7 @@ app.factory('Authservice', function($q, $rootScope ){
 
 app.controller('HomeCtrl', function ($rootScope, $timeout, $state){
     $scope.logout=function(){
-        console.log ("logoutcalled");
-        
+        console.log ("logoutcalled");        
     }
 });
 
@@ -197,6 +196,7 @@ app.controller('ViewCtrl', function ($scope, $state, $timeout, $stateParams,ngTo
     $scope.downVoteCount = 0;
     $scope.savedcount=0;
     $scope.flagCount=0;
+    $scope.COMMENTCount=0;
 
     Stamplay.Object("blogs").get ({_id: $stateParams.id })
     .then(function(resp){
@@ -335,6 +335,7 @@ app.controller('ViewCtrl', function ($scope, $state, $timeout, $stateParams,ngTo
         .then(function(resp){
             console.log(resp);
             $scope.blog = resp;
+            $scope.COMMENTCount = $scope.blog.actions.votes.users_COMMENT.length;
             $scope.comment=" ";
             $scope.$apply();
         },
