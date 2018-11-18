@@ -1,4 +1,5 @@
-<ul class="nav navbar-nav navbar-right" ng-if="loggedIn">
+<div class="container-fluid">
+  <ul class="nav navbar-nav navbar-right" ng-if="loggedIn">
     <li class="dropdown">
       <a class="dropdown-toggle"  data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false">
         Blogs
@@ -7,17 +8,17 @@
       </a>
       <ul>
         <li>
-          <a ui-sref="Create">
+          <a ui-sref="create">
               Write A Blog
           </a>
         </li>
         <li>
-          <a ui-sref="MyBlogs">
+          <a ui-sref="myblogs">
              View A Blog
           </a>
         </li>
         <li>
-          <a ui-sref="SurfBlogs">
+          <a ui-sref="latestpost">
           Surf Blogs
           </a>
         </li>
@@ -31,33 +32,8 @@
       </a>
       <ul>
         <li>
-          <a ui-sref="ViewProfile">
-            View My Profile
-          </a>
-        </li>
-        <li>
-          <a ui-sref="EditProfile">
-             Edit My Profile
-          </a>
-        </li>
-        <li>
         ` <a ui-sref="Saved">
             View Saved Blogs
-          </a>
-        </li>
-        <li>
-          <a ui-sref="reportProblem">
-            Report A Problem
-          </a>
-        </li>
-        <li>
-          <a ui-sref="AskQuestion">
-            Ask Question
-          </a>
-        </li>
-        <li>
-          <a ui-sref="FreqQ">
-            Frequently asked Questions
           </a>
         </li>
         <li>
@@ -67,4 +43,22 @@
         </li>
       </ul>    
     </li>
-</ul>
+  </ul>
+  <div ng-if="loggedIn">
+
+    <div class="jumbotron">
+  
+      <center>
+  
+        <h1> {{displayName}} </h1>
+  
+        <p>
+          <i> WE ARE GLAD YOU ARE BACK !!! </i>
+        </p>
+  
+      </center>
+  
+    </div>
+  
+  </div>
+</div>
