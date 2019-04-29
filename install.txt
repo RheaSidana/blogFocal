@@ -1,0 +1,11 @@
+## NODE JS ##
+download nodejs
+create file with extension .js
+initiate : node <filename>.js
+
+## MYSQL ##
+download mysql
+npm install mysql
+Save the code In a file ca"demo_db_connection.js" and run the file:
+node demo_db_connection.js
+

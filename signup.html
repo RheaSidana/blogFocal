@@ -1,0 +1,98 @@
+<html>
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!--- bootstrap -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+            <!-- jquery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <!-- angular js -->
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+            <!-- linking stylesheets doc -->
+            <link rel="stylesheet" href="web.css" type="text/css">
+            </link>
+            <link rel="stylesheet" href="ngcss.css" type="text/css">
+            </link>
+
+    </head>
+    <body>
+<div class="row pull-centre" style="background-image: url(bg-im.jpg)" >
+    <div class="col-xs-10 col-sm-6 col-md-6 col-xs-offset-1 col-sm-offset-3 " style="background-color: white">
+        <div class="imgcontainer">
+            <img src="signup.jpg" alt="Avatar" class="avatar">
+        </div>
+        <form>
+            <h2> Create Your Account </h2>
+            <hr/>
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-6  ">
+                    <div class="form-group">
+                        <b>First Name: </b>
+                        <input type="text" ng-model="newUser.fname" class="form-control input-md" placeholder="first name" tabindex="1" required />
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-6  ">
+                    <div class="form-group">
+                        <b>Last Name: </b>
+                        <input type="text" ng-model="newUser.lname" class="form-control input-md" tabindex="2" placeholder="last name" required />
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-12 col-md-12  ">
+                    <div class="form-group">
+                            <b>Email: </b>
+                            <input type="email" ng-model="newUser.email" class="form-control input-md" placeholder="abc@hmail.com" tabindex="3" required />
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-6  ">
+                    <div class="form-group">
+                        <b>Password: </b>
+                        <input type="password" ng-model="newUser.password" class="form-control input-md" tabindex="4" required />
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-6  ">
+                    <div class="form-group">
+                        <b>Confirm Password: </b>
+                        <input type="password" ng-model="newUser.confirmPassword" class="form-control input-md" tabindex="5" required />
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-4 col-md-4 ">
+                    <div class="form-group">
+                        <button type="button" ng-click="signup()" role="button" class="btn btn-primary btn-block btn-md" tabindex="6"> SignUp</button>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-4 col-md-4 ">
+                    <div class="form-group">
+                        <button type="reset" ng-click="signup()" role="button" class="btn btn-danger btn-block btn-md" tabindex="7"> Reset </button>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-4 col-md-4  ">
+                    <div class="form-group">
+                        <a href="login.html" class="btn btn-success btn-block btn-md" role="button" tabindex="8">
+                            LogIn
+                        </a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

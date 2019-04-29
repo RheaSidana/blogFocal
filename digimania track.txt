@@ -1,0 +1,27 @@
+home  done (controller semi-done)
+login   done (controller done)
+signup  done  (controller done)
+create post done (controller semi-done )
+userpage DONE (controller done)
+history  done (controller semi-done )
+historypost done 
+preferences DONE (controller semi-done)
+
+feedback  done 
+
+   whatsapp
+facebook
+twitter
+linkedin 
+pinterest
+   google (plus)
+   tumblr
+
+
+template/create
+img/about.jpg
+
+
+database tables
+1. user info
+2. post 

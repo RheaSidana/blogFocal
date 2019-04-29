@@ -1,2 +1,2 @@
-# blogFocal
-blogging website : for blogging
+# digimania
+platform for digital marketers

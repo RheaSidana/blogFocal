@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title> Digimania</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- angular js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+        <!-- linking stylesheets doc -->
+        <link rel="stylesheet" href="web.css" type="text/css">
+        </link>
+        <link rel="stylesheet" href="ngcss.css" type="text/css">
+        </link>
+        <!-- add css, ngToast, angularSanitise, textAngular -->
+    </head>
+    <body ng-controller=" HomeCtrl ">
+      <div data-spy="scroll" data-target=".navbar" data-offset="50">  
+        <div class = "container-fluid" > 
+            <div class="nav navbar-default navbar-inverse " >
+                <div class="container-fluid" >
+                    <div class="navbar-header " >
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="#">DIGIMANIA </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active" ><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <!--<li><a href="#">Projects</a></li> -->
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="login.html">
+                                    <span class="glyphicon glyphicon-log-in">
+                                    </span> 
+                                    Login
+                                </a>
+                            </li>
+                            <li>
+                                <a href="signup.html">  
+                                    <span class="glyphicon glyphicon-check">
+                                    </span> 
+                                    Sing in  
+                                </a>  
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="jumbotron text-center" style = "background-image: url(digimania.jpg)">
+                            <h1 class= "P1">Digimania</h1> 
+                            <p> 
+                                <b><h2 class= "p2">Making Marketing on Digital Platform Easy</h2></b>
+                            </p> 
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <!-- about the website-->
+                    <div class= "row" >
+                        <div class="col-xs-12 col-sm-3 col-md-3" style="color:paleturquoise">
+                            <label><h1>About</h1></label>
+                        </div>
+                        <div class="col-xs-12 col-sm-9 col-md-9" style="color:paleturquoise">
+                            <p>
+                                <h4>Digital Marketing is the marketing of products and services on the internet 
+                                    mainly on different social media platforms.​
+                                    Social media platforms include:​ </h4>
+                                    <br/>
+                                    <h5>
+                                        <ul>
+                                        <li>FACEBOOK ​</li>
+                                        <li>TWITTER ​</li>
+                                        <li>PINTEREST ​</li>
+                                        <li>LINKEDIN ​</li>
+                                        <li>QUORA​</li>
+                                        <li>YOUTUBE</li>
+                                        </ul>
+                                    </h5>
+                                    <br/>
+                                    <h4>
+                                    Digimania will make it easy for you to upload your content on different Social Media 
+                                    Platform with an ease of one click.
+                                    You only have to just select the different social media platforms you want to share 
+                                    the content/ post on.
+                                    </br>
+                                </h4>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid ">
+                    <div class=" row " >
+                        <div class= "col-xs-10 col-sm-6 col-md-6">
+                            <!-- login and sign up -->
+                            <div class="card" >
+                                <a href="login.html">
+                                    <span>
+                                        <img class="card-img-top img-circle " src="login.jpg"  alt="login" width="304" height="236">
+                                    </span>
+                                </a>
+                                <div class="card-body">
+                                    <h2 class="card-title" style="color: goldenrod ">Login to your Account </h2>
+                                    <p class="card-text"><h3 style="color: white ">
+                                        Manage your social media accounts on 
+                                        your basis and share post on your 
+                                        favourite social media platforms </h3>
+                                    </p>
+                                    <a href="login.html" class="btn btn-primary glyphicon glyphicon-log-in">  Login </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class= "col-xs-10 col-sm-6 col-md-6">
+                            <!-- login and sign up -->
+                            <div class="card" >
+                                <a href="signup.html" >
+                                    <span>
+                                    <img class="card-img-top img-circle " src="signup.jpg"  alt="login" width="304" height="236">
+                                    </span>
+                                </a>
+                                <div class="card-body">
+                                    <h2 class="card-title" style="color: goldenrod ">Join the community for free</h2>
+                                    <p class="card-text"><h3 style="color: white ">Handle your social media accounts with an ease of a click </h3></p>
+                                    <a href="signup.html" class="btn btn-success glyphicon glyphicon-check">  SignUp </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="container-fluid">
+                    <!-- about and contact details -->
+                    <div class="row" >
+                        <div class="col-xs-12 col-sm-12 col-md-12" style="color:paleturquoise">
+                            <h2 class="text-center">CONTACT</h2>
+                            <div class="row" >
+                                <div class="col-sm-5">
+                                    <p>Contact us and we'll get back to you within 24 hours.</p>
+                                    <p><span class="glyphicon glyphicon-map-marker"></span> Delhi, India</p>
+                                    <p><span class="glyphicon glyphicon-phone"></span> 1800-***-****</p>
+                                    <p><span class="glyphicon glyphicon-envelope"></span> digimania@helpdesk.com</p>
+                                </div>
+                                <div class="col-sm-7 slideanim">
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <input class="form-control" ng-model="query.name" name="name" placeholder="Name" type="text" required>
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                            <input class="form-control" ng-model="query.email" name="email" placeholder="Email" type="email" required>
+                                        </div>
+                                    </div>
+                                    <textarea class="form-control" ng-model="query.comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                                    <div class="row">
+                                        <div class="col-sm-12 form-group">
+                                            <button class="btn btn-warning pull-right" type="submit">Send</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

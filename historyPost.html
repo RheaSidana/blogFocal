@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title> Digimania</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- angular js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+        <!-- linking stylesheets doc -->
+        <link rel="stylesheet" href="web.css" type="text/css">
+        </link>
+        <link rel="stylesheet" href="ngcss.css" type="text/css">
+        </link>
+        <!-- add css, ngToast, angularSanitise, textAngular -->
+    </head>
+    <body>
+        <div class="row " style="background-image: url(bg-im.jpg)" >
+            <div class="col-xs-12 col-sm-6 col-md-4 col-xs-offset-1 col-sm-offset-4 " style="background-color: white">
+                <form>            
+                    <h2> The Post created by you </h2>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12  ">
+                            <div class="form-group">
+                                <b>Image : </b>
+                                <!-- image left -->
+                                <img class="card-img-top img-circle " ng-src="data:image/JPEG;base64,{{category.Picture}}"  alt="login" width="304" height="236">
+                                <!--<input type="text" ng-model="user.email" class="form-control input-md" placeholder="abc@gmail.com" tabindex="1" required />-->
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12  ">
+                            <div class="form-group">
+                                <b>Topic: </b>
+                                    {{user.post.topic}}
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12  ">
+                            <div class="form-group">
+                                <b>Price : </b>
+                                    {{user.post.price }}
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12  ">
+                            <div class="form-group">
+                                <b>Description : </b>
+                                    {{user.post.desc }}
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12  ">
+                            <div class="form-group">
+                                <b>Link : </b>
+                                    {{user.post.link}}
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12  ">
+                            <div class="form-group">
+                                <b>Hastags : </b>
+                                    {{user.post.hasht }}                                    
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
